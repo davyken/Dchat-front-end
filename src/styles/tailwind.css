@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example media query for smaller screens */
+@media (max-width: 600px) {
+  .top-bar {
+    /* Specific styles for smaller screens */
+  }
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 50px; /* Example: Reduce sidebar width */
+  }
+  .chat-window {
+    /* Specific styles for smaller screens */
+  }
+}
