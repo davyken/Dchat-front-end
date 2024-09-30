@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://d-chat-backend.onrender.com";
 
 const fetchParticularUser = async (id) => {
   try {
