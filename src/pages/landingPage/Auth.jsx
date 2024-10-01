@@ -47,8 +47,8 @@ const Auth = () => {
     console.log("Handling form submission");
     try {
       let url = isSignup
-        ? "http://localhost:3000/auth/register"
-        : "http://localhost:3000/auth/login";
+        ? "https://d-chat-backend.onrender.com/auth/register"
+        : "https://d-chat-backend.onrender.com/auth/login";
       const response = await axios.post(url, formData);
       console.log("Form submission successful", response.data);
       if (isSignup) {
@@ -67,7 +67,7 @@ const Auth = () => {
     try {
       console.log("Handling email verification", verificationCode);
       const response = await axios.post(
-        "http://localhost:3000/auth/verify-email",
+        "https://d-chat-backend.onrender.com/auth/verify-email",
         {
           email: formData.email,
           verificationCode,
